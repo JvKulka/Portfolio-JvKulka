@@ -1,0 +1,287 @@
+body {
+    background: rgb(27, 27, 27);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row; /*com o 'row' o elemento fica em sentido de linha*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+#link-name {
+    text-decoration: none;
+    color: white;
+}
+
+#link-name:hover {
+    color: white;
+}
+
+.link-header {
+    color: white;
+}
+
+.link-header:hover {
+    color: rgb(30, 190, 40);
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+#projetos-btn {
+    border: 2px solid rgb(30, 190, 40);
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+#projetos-btn:hover {
+    background-color: rgb(30, 190, 40);
+    color: black;
+    transition: 0.5s;
+}
+
+#sessao-inicial {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+#ola {
+ font-size: 50px;
+ font-family: poppinslight;
+ margin-bottom: 5px;
+}
+
+#nome-text {
+    color: rgb(30, 190, 40);
+    font-size: 75px;
+    font-family: poppinslight;
+}
+
+#desenvolvedor {
+    font-size: 25px;
+    opacity: 80%;
+    font-family: poppinslight;
+    margin-top: 5px;
+}
+
+#btn-linkedin {
+    height: 60px;
+    font-size: 25px;
+    width: 100%;
+    background-color: rgb(30, 190, 40);
+    font-weight: bold;
+    border-radius: 35px;
+    transition: 0.4s all;
+}
+
+#btn-linkedin:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    
+}
+
+#tamanho-textos {
+    margin-top: 150px;
+}
+
+#img-foto {
+    width: 620px;
+    margin-top: -40px;
+    margin-left: 20px;
+    transition: 0.3s all;
+}
+
+#img-foto:hover {
+    transform: scale(1.02);
+}
+
+#div-foto {
+    margin-left: 75px;
+    margin-top: 30px;
+}
+
+/** SESSAO SOBRE MIM **/
+
+#img-sobre-mim {
+    width: 500px;
+    float: left;
+    transition: 0.3s all;
+}
+
+#img-sobre-mim:hover {
+    transform: scale(1.02);
+}
+
+#sobre-mim {
+    display: flex;
+    margin-left: 450px;
+    flex-direction: column;
+    justify-content: center;
+    height: 390px;
+    width: 650px;
+}
+
+#titulo-sobre-mim {
+    font-size: 45px;
+    margin-bottom: -10px;
+    margin-top: auto;
+}
+
+#sessao-sobre-mim {
+    margin-top: 250px;
+    margin-bottom: 420px;
+}
+
+#texto-sobre-mim {
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* SESSAO PROJETOS */
+#sessao-projetos {
+    margin-top: 385px;
+    margin-bottom: 380px;
+}
+
+.titulo-projetos {
+    text-align: center;
+    font-size: 60px;
+}
+
+/* SESSAO PROJETOS */
+.card-projeto {
+    background-color: rgb(30, 190, 40);
+    width: 380px;
+    height: 230px;
+    border-radius: 40px;
+    margin: 0 10px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+}
+
+.projeto-spotify {
+    background-image: url(/components/images/projeto-spotify2.png);
+}
+
+.projeto-everest {
+    background-image: url(/components/images/projeto-everest.png);
+}
+
+.projeto-landing-page {
+    background-image: url(/components/images/projeto-landing-page.png);
+}
+
+#div-repositorio {
+    margin-top: 30px;
+    text-align: center;
+    align-self: center;
+}
+
+#link-repositorio {
+    color: white;
+    text-decoration: none;
+}
+
+#link-repositorio:hover {
+    color: rgb(30, 190, 40);
+}
+
+.center-span {
+    text-align: center;
+}
+
+.text-span {
+    opacity: 80%;
+}
+
+/* HABILIDADE */
+
+#sessao-habilidades {
+    margin-top: 385px;
+    margin-bottom: 320px;
+}
+
+.card__giratorio {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 10px;
+}
+
+.cards-habilidades {
+    display: flex;
+    max-width: 1200px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card__giratorio-conteudo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card__giratorio:hover .card__giratorio-conteudo {
+    transform: rotateY(180deg);
+}
+
+.card__giratorio-conteudo--frente,
+.card__giratorio-conteudo--traseira {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card__giratorio-conteudo--frente {
+    background: linear-gradient(-229deg, rgb(30, 190, 40), #29c778);
+}
+
+.card__giratorio-conteudo--traseira {
+    background: linear-gradient(229deg, rgb(30, 190, 40), #29c778);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card__giratorio-conteudo--traseira h1,
+.card__giratorio-conteudo--traseira p {
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card__giratorio-conteudo--traseira h1 {
+    font-size: 1.7rem;
+}
+
+.logo {
+    font-size: 80px;
+    filter: drop-shadow(2px 2px 5px black);
+    opacity: .7;
+}
