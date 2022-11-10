@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: rgb(27, 27, 27);
     color: white;
@@ -285,3 +289,112 @@ li {
     filter: drop-shadow(2px 2px 5px black);
     opacity: .7;
 }
+
+
+/* CONTATO */
+#sessao-contato {
+    margin-top: 390px;
+    margin-bottom: 320px;
+}
+.centralizar {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#div-contato {
+    display: flex;
+}
+
+
+.link-contato {
+    text-decoration: none;
+    color: #b7b7b7;
+    margin: 18px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(28, 28, 28);
+    border-radius: 15px;
+    position: relative;
+    transition: 0.4s;
+}
+
+.link-contato:hover {
+    transform: rotate(360deg);
+}
+
+.link-contato::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #373737;
+    border-radius: 15px;
+    transition: opasity 0.2s;
+}
+
+.link-contato:hover::before {
+    opacity: 0.4;
+}
+
+.link-contato:nth-child(1)::before {
+    background: rgb(30, 190, 40);
+}
+
+.link-contato:nth-child(2)::before {
+    background: #0a66c2;
+}
+
+.link-contato:nth-child(3)::before {
+    background: #c32aa3;
+}
+
+.link-contato:hover::before {
+    transform: translate(-4px, -4px);
+    filter: blur(8px);
+}
+
+.link-contato i { 
+    font-size: 1.8em;
+    transition: all 0.4s;
+}
+
+
+/*
+.link-contato {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: 0.5s;
+}
+
+.link-contato:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.fab {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: 0.5s;
+}
+*/
