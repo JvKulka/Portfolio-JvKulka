@@ -7,8 +7,7 @@ body {
     color: white;
     font-family: poppinsregular;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
+    margin: 15px auto;
 }
 
 header {
@@ -346,11 +345,11 @@ li {
 }
 
 .link-contato:nth-child(2)::before {
-    background: #0a66c2;
+    background: rgb(30, 190, 40);
 }
 
 .link-contato:nth-child(3)::before {
-    background: #c32aa3;
+    background: rgb(30, 190, 40);
 }
 
 .link-contato:hover::before {
@@ -363,38 +362,54 @@ li {
     transition: all 0.4s;
 }
 
+/* FOOTER */
 
-/*
-.link-contato {
+footer {
+  border-top: 1px solid rgba(105, 104, 104, 0.425);
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+
+#title2 {
+    line-height: 10px;
+    margin-top: 15px;
+}
+
+#link-name2 {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.link-rodape {
+    color: white;
+    text-decoration: underline;
+}
+
+.link-rodape:hover {
+    color: rgb(30, 190, 40);
+}
+
+.sociais-rodape {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 18px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(28, 28, 28);
+    border-radius: 15px;
     position: relative;
-    width: 50px;
-    height: 50px;
-    display: block;
-    text-align: center;
-    margin: 0 10px;
-    border-radius: 50%;
-    padding: 6px;
-    box-sizing: border-box;
-    text-decoration: none;
-    box-shadow: 0 10px 15px rgb(0, 0, 0, 0.3);
-    background: linear-gradient(0deg, #ddd, #fff);
-    transition: 0.5s;
+    font-size: 25px;
+    transition: 0.4s;
 }
 
-.link-contato:hover {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
+.sociais-rodape:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    color: rgb(30, 190, 40);
 }
-
-.fab {
-    width: 100%;
-    height: 100%;
-    display: block;
-    background: linear-gradient(0deg, #fff, #ddd);
-    border-radius: 50%;
-    line-height: calc(60px - 12px);
-    font-size: 24px;
-    color: #262626;
-    transition: 0.5s;
-}
-*/
