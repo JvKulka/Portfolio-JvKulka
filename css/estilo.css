@@ -12,7 +12,8 @@ body {
 
 header {
     display: flex;
-    flex-direction: row; /*com o 'row' o elemento fica em sentido de linha*/
+    flex-direction: row;
+    /*com o 'row' o elemento fica em sentido de linha*/
     justify-content: space-between;
     align-items: center;
 }
@@ -33,6 +34,7 @@ header {
 
 .link-header {
     color: white;
+    text-decoration: none;
 }
 
 .link-header:hover {
@@ -63,9 +65,9 @@ li {
 }
 
 #ola {
- font-size: 50px;
- font-family: poppinslight;
- margin-bottom: 5px;
+    font-size: 50px;
+    font-family: poppinslight;
+    margin-bottom: 5px;
 }
 
 #nome-text {
@@ -94,7 +96,7 @@ li {
 #btn-linkedin:hover {
     cursor: pointer;
     transform: scale(1.03);
-    
+
 }
 
 #tamanho-textos {
@@ -295,6 +297,7 @@ li {
     margin-top: 390px;
     margin-bottom: 320px;
 }
+
 .centralizar {
     text-align: center;
     align-items: center;
@@ -357,7 +360,7 @@ li {
     filter: blur(8px);
 }
 
-.link-contato i { 
+.link-contato i {
     font-size: 1.8em;
     transition: all 0.4s;
 }
@@ -365,10 +368,10 @@ li {
 /* FOOTER */
 
 footer {
-  border-top: 1px solid rgba(105, 104, 104, 0.425);
-  padding: 0px 20px;
-  display: flex;
-  justify-content: center;
+    border-top: 1px solid rgba(105, 104, 104, 0.425);
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -385,7 +388,7 @@ footer {
 
 .link-rodape {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .link-rodape:hover {
