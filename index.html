@@ -10,13 +10,15 @@
     <title>Portfólio | JvKulka</title>
     <link rel="icon" href="components/images/foto-joao2.png">
     <script src="https://kit.fontawesome.com/37fcbc67a8.js" crossorigin="anonymous"></script>
+    <script> document.documentElement.className += ' js'; </script>
+    <!--Script para compatibilidade caso o js esteja desativado-->
 </head>
 
 <!--Inicio cabeçalho-->
 <a name="inicio"></a>
-<header id="cabecalho-iniciar">
+<header id="cabecalho-iniciar" class="js-linksInternos js-scroll">
     <div id="title">
-        <a href="#" id="link-name">
+        <a href="" id="link-name">
             <h1>Portfólio</h1>
             <h1>JvKulka</h1>
         </a>
@@ -45,7 +47,7 @@
 
 <!--Inicio sessao inicial-->
 
-<section id="sessao-inicial">
+<section id="sessao-inicial" class="js-scroll">
     <aside>
         <!--Tag semantica para abrigar textos-->
 
@@ -71,7 +73,7 @@
 
 <!--Inicio sessao sobre mim-->
 
-<section id="sessao-sobre-mim">
+<section id="sessao-sobre-mim" class="js-scroll">
 
     <div>
         <div>
@@ -96,7 +98,7 @@
 <!--Fim sessao sobre mim-->
 
 <!--Inicio sessao projetos-->
-<section id="sessao-projetos">
+<section id="sessao-projetos" class="js-scroll">
     <h1 class="titulo-projetos">Projetos</h1>
     <div class="box">
         <div>
@@ -136,7 +138,7 @@
 <!--Fim sessao projetos-->
 
 <!--Inicio sessao habilidades-->
-<section id="sessao-habilidades">
+<section id="sessao-habilidades" class="js-scroll">
     <h1 class="titulo-projetos">Habilidades</h1>
 
 
@@ -183,7 +185,7 @@
         </div>
 
         <!-- Card React -->
-        <div class="card__giratorio">
+        <!-- <div class="card__giratorio">
             <div class="card__giratorio-conteudo">
                 <div class="card__giratorio-conteudo--frente">
                     <i class="fa-brands fa-react logo"></i>
@@ -194,7 +196,7 @@
                         usuário em páginas web.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
 
@@ -241,7 +243,7 @@
             </div>
         </div>
 
-        <div class="card__giratorio">
+        <!-- <div class="card__giratorio">
             <div class="card__giratorio-conteudo">
                 <div class="card__giratorio-conteudo--frente">
                     <i class="fa-brands fa-sass logo"></i>
@@ -251,7 +253,7 @@
                     <p>É uma linguagem de extensão do CSS responsável por adicionar recursos especiais.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
     <a name="sessao-habilidades"></a>
@@ -259,7 +261,7 @@
 <!--Fim sessao habilidades-->
 
 <!--Inicio sessao Contato-->
-<section id="sessao-contato">
+<section id="sessao-contato" class="js-scroll">
     <div class="centralizar">
         <h1 class="titulo-projetos">Contato</h1>
         <p>Para mais informações, entrar em contato via e-mail ou através das redes sociais abaixo.</p>
@@ -321,7 +323,7 @@
     </div>
 </footer>
 <!--Fim rodape-->
-
+<script src="script.js"></script>
 </body>
 
 </html>
