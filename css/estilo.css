@@ -182,11 +182,11 @@ li {
 }
 
 .projeto-everest {
-    background-image: url(/components/images/projeto-everest.png);
+    background-image: '';
 }
 
 .projeto-landing-page {
-    background-image: url(/components/images/projeto-landing-page.png);
+    background-image: '';
 }
 
 #div-repositorio {
