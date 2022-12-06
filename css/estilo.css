@@ -87,6 +87,7 @@ li {
     font-weight: bold;
     border-radius: 35px;
     transition: 0.4s all;
+    border: none;
 }
 
 #btn-linkedin:hover {
@@ -116,6 +117,16 @@ li {
 }
 
 /** SESSAO SOBRE MIM **/
+
+.effect {
+    margin-top: 2px;
+    background: linear-gradient(-30deg, #3e9bf1, #1ebe28, #175f20, #23d5ab);
+    background-size: 400% 400%;
+    animation: changeBackgroundColor 6s ease infinite;
+    height: 3px;
+    width: 240px;
+    border-radius: 2px;
+}
 
 #img-sobre-mim {
     width: 500px;
@@ -167,6 +178,16 @@ li {
 .titulo-projetos {
     text-align: center;
     font-size: 60px;
+}
+
+.effect-projetos {
+    background: linear-gradient(-30deg, #3e9bf1, #1ebe28, #175f20, #23d5ab);
+    background-size: 400% 400%;
+    animation: changeBackgroundColor 6s ease infinite;
+    height: 3px;
+    width: 220px;
+    border-radius: 2px;
+    margin: -13px auto;
 }
 
 .container {
@@ -270,6 +291,16 @@ li {
     margin-bottom: 320px;
 }
 
+.effect-habilidades {
+    background: linear-gradient(-30deg, #3e9bf1, #1ebe28, #175f20, #23d5ab);
+    background-size: 400% 400%;
+    animation: changeBackgroundColor 6s ease infinite;
+    height: 3px;
+    width: 340px;
+    border-radius: 2px;
+    margin: -13px auto;
+}
+
 .card__giratorio {
     background-color: transparent;
     width: 300px;
@@ -292,6 +323,10 @@ li {
     text-align: center;
     transition: transform 1s;
     transform-style: preserve-3d;
+}
+
+.padding-p {
+    padding: 0 15px 0 15px;
 }
 
 .card__giratorio:hover .card__giratorio-conteudo {
@@ -343,6 +378,16 @@ li {
 #sessao-contato {
     margin-top: 390px;
     margin-bottom: 320px;
+}
+
+.effect-contato {
+    background: linear-gradient(-30deg, #3e9bf1, #1ebe28, #175f20, #23d5ab);
+    background-size: 400% 400%;
+    animation: changeBackgroundColor 6s ease infinite;
+    height: 3px;
+    width: 220px;
+    border-radius: 2px;
+    margin: -13px auto;
 }
 
 .centralizar {
@@ -431,6 +476,20 @@ footer {
     cursor: pointer;
     transform: scale(1.15);
     color: rgb(30, 190, 40);
+}
+
+@keyframes changeBackgroundColor {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* JAVASCRIPT */
