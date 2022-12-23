@@ -1,5 +1,5 @@
 body {
-    background: rgb(27, 27, 27);
+    background-color: rgb(27, 27, 27);
     color: white;
     font-family: poppinsregular;
     max-width: 1200px;
@@ -43,7 +43,7 @@ li {
 }
 
 #projetos-btn {
-    border: 2px solid #1ebe28;
+    border: 2px solid #60fb7c;
     padding: 10px 15px;
     border-radius: 15px;
 }
@@ -54,8 +54,12 @@ li {
     transition: 0.5s;
 }
 
+/* SESSAO INICIAL */
+
 #sessao-inicial {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     margin-top: 50px;
 }
@@ -67,7 +71,7 @@ li {
 }
 
 #nome-text {
-    color: rgb(30, 190, 40);
+    color: #60fb7c;
     font-size: 75px;
     font-family: poppinslight;
 }
@@ -83,7 +87,7 @@ li {
     height: 60px;
     font-size: 25px;
     width: 100%;
-    background-color: #1ebe28;
+    background-color: #60fb7c;
     font-weight: bold;
     border-radius: 35px;
     transition: 0.4s all;
@@ -97,13 +101,13 @@ li {
 }
 
 #tamanho-textos {
-    margin-top: 150px;
+    margin-top: -50px;
+    width: 490px;
 }
 
 #img-foto {
-    width: 620px;
-    margin-top: -40px;
-    margin-left: 20px;
+    width: 580px;
+    margin-left: 100px;
     transition: 0.3s all;
 }
 
@@ -129,9 +133,11 @@ li {
 }
 
 #img-sobre-mim {
-    width: 500px;
+    width: 360px;
     float: left;
     transition: 0.3s all;
+    margin-top: 90px;
+    margin-left: 45px;
 }
 
 #img-sobre-mim:hover {
