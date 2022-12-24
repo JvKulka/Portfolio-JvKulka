@@ -34,7 +34,7 @@ header {
 }
 
 .link-header:hover {
-    color: rgb(30, 190, 40);
+    color: #5ae974;
 }
 
 li {
@@ -43,13 +43,13 @@ li {
 }
 
 #projetos-btn {
-    border: 2px solid #60fb7c;
+    border: 2px solid #5ae974;
     padding: 10px 15px;
     border-radius: 15px;
 }
 
 #projetos-btn:hover {
-    background-color: rgb(30, 190, 40);
+    background-color: #5ae974;
     color: black;
     transition: 0.5s;
 }
@@ -87,7 +87,7 @@ li {
     height: 60px;
     font-size: 25px;
     width: 100%;
-    background-color: #60fb7c;
+    background: linear-gradient(to right, #5ae974, #64e97c);
     font-weight: bold;
     border-radius: 35px;
     transition: 0.4s all;
@@ -124,7 +124,7 @@ li {
 
 .effect {
     margin-top: 2px;
-    background: linear-gradient(-30deg, #3e9bf1, #1ebe28, #175f20, #23d5ab);
+    background: linear-gradient(-30deg, #3e9bf1, #5ae974, #175f20, #23d5ab);
     background-size: 400% 400%;
     animation: changeBackgroundColor 6s ease infinite;
     height: 3px;
@@ -187,7 +187,7 @@ li {
 }
 
 .effect-projetos {
-    background: linear-gradient(-30deg, #3e9bf1, #1ebe28, #175f20, #23d5ab);
+    background: linear-gradient(-30deg, #3e9bf1, #5ae974, #175f20, #23d5ab);
     background-size: 400% 400%;
     animation: changeBackgroundColor 6s ease infinite;
     height: 3px;
@@ -227,21 +227,12 @@ li {
 }
 
 .container .card-projeto:hover .face.face1 {
-    background: #1ebe28;
     transform: translateY(0);
 }
 
-.container .card-projeto .face.face1 .descricao-projeto {
-    opacity: 0.2;
-    transition: 0.5s;
-}
-
-.container .card-projeto:hover .face.face1 .descricao-projeto {
-    opacity: 1;
-}
-
 .container .card-projeto .face.face1 .descricao-projeto img {
-    max-width: 100px;
+    max-width: 100%;
+    margin-bottom: 8px;
 }
 
 .container .card-projeto .face.face1 .descricao-projeto h3 {
@@ -249,7 +240,13 @@ li {
     padding: 0;
     color: #fff;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.4em;
+    margin-bottom: 55px;
+    text-decoration: none;
+}
+
+.link-projetos {
+    text-decoration: none;
 }
 
 .container .card-projeto .face.face2 {
@@ -266,6 +263,7 @@ li {
 
 .container .card-projeto:hover .face.face2 {
     transform: translateY(0);
+    cursor: default;
 }
 
 .container .card-projeto .face.face2 .descricao-projeto p {
@@ -285,9 +283,10 @@ li {
 }
 
 .container .card-projeto .face.face2 .descricao-projeto a:hover {
-    background: #333;
-    color: #fff;
+    background: #5ae974;
+    color: rgb(0, 0, 0);
     transition: 0.4s;
+    border: 1px solid #5ae974;
 }
 
 /* HABILIDADE */
@@ -298,7 +297,7 @@ li {
 }
 
 .effect-habilidades {
-    background: linear-gradient(-30deg, #3e9bf1, #1ebe28, #175f20, #23d5ab);
+    background: linear-gradient(-30deg, #3e9bf1, #5ae974, #175f20, #23d5ab);
     background-size: 400% 400%;
     animation: changeBackgroundColor 6s ease infinite;
     height: 3px;
@@ -354,11 +353,11 @@ li {
 }
 
 .card__giratorio-conteudo--frente {
-    background: linear-gradient(-229deg, rgb(30, 190, 40), #29c778);
+    background: linear-gradient(-229deg, #5ae974, #37dd69);
 }
 
 .card__giratorio-conteudo--traseira {
-    background: linear-gradient(229deg, rgb(30, 190, 40), #29c778);
+    background: linear-gradient(229deg, #5ae974, #37dd69);
     color: white;
     transform: rotateY(180deg);
 }
@@ -387,7 +386,7 @@ li {
 }
 
 .effect-contato {
-    background: linear-gradient(-30deg, #3e9bf1, #1ebe28, #175f20, #23d5ab);
+    background: linear-gradient(-30deg, #3e9bf1, #5ae974, #175f20, #23d5ab);
     background-size: 400% 400%;
     animation: changeBackgroundColor 6s ease infinite;
     height: 3px;
@@ -425,7 +424,7 @@ li {
 .link-contato:hover {
     cursor: pointer;
     transform: scale(1.15);
-    color: rgb(30, 190, 40);
+    color: #5ae974;
 }
 
 .link-contato i {
@@ -459,7 +458,7 @@ footer {
 }
 
 .link-rodape:hover {
-    color: rgb(30, 190, 40);
+    color: #5ae974;
 }
 
 .sociais-rodape {
@@ -481,7 +480,7 @@ footer {
 .sociais-rodape:hover {
     cursor: pointer;
     transform: scale(1.15);
-    color: rgb(30, 190, 40);
+    color: #5ae974;
 }
 
 @keyframes changeBackgroundColor {
