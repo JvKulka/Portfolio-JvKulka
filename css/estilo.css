@@ -171,6 +171,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .titulo-projetos {
@@ -192,14 +193,16 @@ li {
     width: 1000px;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-family: consolas;
+    flex-wrap: wrap;
 }
 
 .container .card-projeto {
     position: relative;
     cursor: pointer;
+    margin: 15px;
 }
 
 .container .card-projeto .face {
@@ -311,6 +314,7 @@ li {
     max-width: 1200px;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card__giratorio-conteudo {
@@ -375,6 +379,7 @@ li {
 #sessao-contato {
     margin-top: 390px;
     margin-bottom: 320px;
+    padding: 20px;
 }
 
 .effect-contato {
