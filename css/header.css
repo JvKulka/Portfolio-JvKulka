@@ -6,24 +6,37 @@ body {
     margin: auto;
 }
 
-header {
+header,
+.navigation_header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    padding: 10px 30px;
 }
 
-#title {
+header {
+    justify-content: space-between;
+    padding: 30px 25px;
+    height: 3.5em;
+}
+
+.navigation_header {
+    gap: 3em;
+    z-index: 2;
+}
+
+
+.title {
     flex-direction: column;
     line-height: 10px;
+    font-size: 1rem;
 }
 
-#link-name {
+.link-name {
     text-decoration: none;
     color: white;
 }
 
-#link-name:hover {
+.link-name:hover {
     color: white;
 }
 
@@ -43,34 +56,24 @@ header {
     color: #5ae974;
 }
 
-#projetos-btn {
+.projetos-btn {
     border: 2px solid #5ae974;
     padding: 10px 15px;
     border-radius: 15px;
-}
-
-#projetos-btn:hover {
-    background-color: #5ae974;
-    color: black;
     transition: 0.5s;
 }
 
-.btn-icon-header {
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    display: none;
+.projetos-btn:hover {
+    background-color: #5ae974;
+    color: black;
 }
 
-@keyframes showSidebar {
-    from {
-        margin-left: -100vw;
-    }
-
-    top {
-        margin-left: -10vw;
-    }
+.btn_icon_header {
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    display: none;
 }
 
 /*----------------------------------------------------------------------------------- JAVASCRIPT -------------------------------------------------------------------------------------------*/

@@ -46,26 +46,25 @@
 }
 
 @media (max-width: 833px) {
-    .btn-icon-header {
+    .navigation_header {
+        position: absolute;
+        flex-direction: column !important;
+        top: 0;
+        background: #1b1b1b;
+        height: 100%;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+
+    .btn_icon_header {
         display: block;
     }
 
-    .navegacao {
-        position: absolute;
-        flex-direction: column;
-        top: 0;
-        width: 40vw;
-        height: 100%;
-        padding: 1em;
-        animation-duration: 1s;
-        margin-left: 100vw;
-        background-color: orange;
+    .title {
+        font-size: 0.8rem
     }
-
-    .link-header {
-        margin-left: 10px;
-    }
-
 }
 
 @media (max-width: 650px) {
@@ -122,21 +121,26 @@
 }
 
 @media (max-width: 400px) {
+    #sessao-inicial {
+        padding-top: 100px;
+        padding-bottom: 110px;
+    }
+
     #sessao-sobre-mim {
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     #sessao-projetos {
-        padding-bottom: 150px;
+        padding-bottom: 100px;
     }
 
     #sessao-habilidades {
-        padding-bottom: 150px;
+        padding-bottom: 100px;
     }
 
     #sessao-contato {
-        margin-bottom: 150px;
+        margin-bottom: 100px;
     }
 
     .sobre-mim {

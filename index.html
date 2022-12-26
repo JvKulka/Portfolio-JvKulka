@@ -23,10 +23,9 @@
 </head>
 
 <!--Inicio cabeçalho-->
-<a name="inicio"></a>
-<header id="header" class="js-linksInternos js-scroll">
+<header id="header">
 
-    <button class="btn-icon-header" onclick="abrirBotao()">
+    <button onclick="toggleSidebar()" class="btn_icon_header">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
             viewBox="0 0 16 16">
             <path fill-rule="evenodd"
@@ -34,15 +33,15 @@
         </svg>
     </button>
 
-    <div id="title">
-        <a href="index.html" id="link-name">
+    <div class="title">
+        <a href="index.html" class="link-name">
             <h1>Portfólio</h1>
             <h1>JvKulka</h1>
         </a>
     </div>
 
-    <div class="navegacao" id="navegacao">
-        <button class="btn-icon-header" onclick="abrirBotao()">
+    <div class="navigation_header" id="navigation_header">
+        <button onclick="toggleSidebar()" class="btn_icon_header">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x"
                 viewBox="0 0 16 16">
                 <path
@@ -53,7 +52,7 @@
         <a href="#sessao-sobre-mim" class="link-header">Sobre Mim</a>
         <a href="#sessao-projetos" class="link-header">Projetos</a>
         <a href="#sessao-habilidades" class="link-header">Habilidades</a>
-        <a href="#sessao-contato" id="projetos-btn" class="link-header">Contato</a>
+        <a href="#sessao-contato" class="link-header projetos-btn">Contato</a>
     </div>
 
 </header>
