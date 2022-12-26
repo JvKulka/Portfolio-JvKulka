@@ -1,0 +1,65 @@
+footer {
+    border-top: 1px solid rgba(105, 104, 104, 0.425);
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    opacity: 90%;
+}
+
+
+.title2 {
+    line-height: 10px;
+    margin-top: 15px;
+}
+
+#link-name2 {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.link-rodape {
+    color: white;
+    text-decoration: none;
+}
+
+.ul-rodape {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ul-rodape li {
+    list-style: none;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+.link-rodape:hover {
+    color: #5ae974;
+}
+
+.div-contato-rodape {
+    display: flex;
+}
+
+.sociais-rodape {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 18px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(28, 28, 28);
+    border-radius: 15px;
+    position: relative;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.sociais-rodape:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    color: #5ae974;
+}

@@ -1,0 +1,102 @@
+.sessao-inicial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    transition: 1s;
+}
+
+.ola {
+    font-size: 2.8rem;
+    font-family: poppinslight;
+    margin-bottom: -10px;
+}
+
+.nome-text {
+    color: #60fb7c;
+    font-size: 3.8rem;
+    font-family: poppinslight;
+}
+
+.bye {
+    animation-name: bye-animation;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+    margin-left: -10px;
+}
+
+@keyframes bye-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.desenvolvedor {
+    font-size: 1.5rem;
+    opacity: 80%;
+    font-family: poppinslight;
+    margin-top: -5px;
+}
+
+.btn-linkedin {
+    height: 60px;
+    font-size: 25px;
+    width: 90%;
+    background: linear-gradient(to right, #5ae974, #64e97c);
+    font-weight: bold;
+    border-radius: 35px;
+    transition: 0.4s all;
+    border: none;
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+.btn-linkedin:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+
+}
+
+.tamanho-textos {
+    margin: auto;
+    width: 490px;
+}
+
+.img-foto {
+    width: 490px;
+    transition: 0.3s all;
+}
+
+.img-foto:hover {
+    transform: scale(1.02);
+}

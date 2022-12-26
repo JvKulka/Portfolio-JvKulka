@@ -1,0 +1,44 @@
+.effect-sobre-mim {
+    margin-top: 2px;
+    background: linear-gradient(-30deg, #3e9bf1, #5ae974, #175f20, #23d5ab);
+    background-size: 400% 400%;
+    animation: changeBackgroundColor 6s ease infinite;
+    height: 3px;
+    width: 240px;
+    border-radius: 2px;
+}
+
+#sessao-sobre-mim {
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.sobre-mim {
+    display: flex;
+    padding: 35px;
+}
+
+.img-sobre-mim {
+    width: 340px;
+    transition: 0.3s all;
+    padding: 25px 20px;
+}
+
+.img-sobre-mim:hover {
+    transform: scale(1.02);
+}
+
+.textos-sobre-mim {
+    padding: 20px;
+}
+
+.titulo-sobre-mim {
+    font-size: 2.8rem;
+    margin-bottom: -10px;
+    margin-top: auto;
+}
+
+.inf-sobre-mim {
+    font-size: 1.1rem;
+    text-align: start;
+}

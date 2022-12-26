@@ -1,0 +1,51 @@
+#sessao-contato {
+    margin-bottom: 250px;
+    padding: 20px;
+}
+
+.effect-contato {
+    background: linear-gradient(-30deg, #3e9bf1, #5ae974, #175f20, #23d5ab);
+    background-size: 400% 400%;
+    animation: changeBackgroundColor 6s ease infinite;
+    height: 3px;
+    width: 220px;
+    border-radius: 2px;
+    margin: -13px auto;
+}
+
+.centralizar {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-flex {
+    display: flex;
+}
+
+
+.link-contato {
+    text-decoration: none;
+    color: #b7b7b7;
+    margin: 18px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(28, 28, 28);
+    border-radius: 15px;
+    position: relative;
+    transition: 0.4s;
+    font-size: 15px;
+}
+
+.link-contato:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    color: #5ae974;
+}
+
+.link-contato i {
+    font-size: 1.8em;
+}

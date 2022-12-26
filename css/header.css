@@ -1,0 +1,90 @@
+body {
+    background-color: #1b1b1b;
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+#title {
+    flex-direction: column;
+    line-height: 10px;
+}
+
+#link-name {
+    text-decoration: none;
+    color: white;
+}
+
+#link-name:hover {
+    color: white;
+}
+
+.navegacao {
+    display: flex;
+    gap: 2.5em;
+}
+
+.link-header {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+.link-header:hover {
+    color: #5ae974;
+}
+
+#projetos-btn {
+    border: 2px solid #5ae974;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+#projetos-btn:hover {
+    background-color: #5ae974;
+    color: black;
+    transition: 0.5s;
+}
+
+.btn-icon-header {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@keyframes showSidebar {
+    from {
+        margin-left: -100vw;
+    }
+
+    top {
+        margin-left: -10vw;
+    }
+}
+
+/*----------------------------------------------------------------------------------- JAVASCRIPT -------------------------------------------------------------------------------------------*/
+
+/* Animação do scroll */
+
+.js .js-scroll {
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+    transition: 1s;
+}
+
+.js .js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: 1s;
+}
