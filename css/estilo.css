@@ -66,22 +66,65 @@ li {
 }
 
 .ola {
-    font-size: 3.1rem;
+    font-size: 2.9rem;
     font-family: poppinslight;
-    margin-bottom: 5px;
+    margin-bottom: -10px;
 }
 
 .nome-text {
     color: #60fb7c;
-    font-size: 4.7rem;
+    font-size: 3.9rem;
     font-family: poppinslight;
+}
+
+.bye {
+    animation-name: bye-animation;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+    margin-left: -15px;
+}
+
+@keyframes bye-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .desenvolvedor {
     font-size: 1.5rem;
     opacity: 80%;
     font-family: poppinslight;
-    margin-top: 5px;
+    margin-top: -5px;
 }
 
 .btn-linkedin {
@@ -523,13 +566,13 @@ footer {
 
 }
 
-@media (max-width: 950px) {
+@media (max-width: 960px) {
     .img-foto {
         width: 320px;
     }
 }
 
-@media (max-width: 875px) {
+@media (max-width: 877px) {
     .img-foto {
         display: none;
     }
@@ -546,15 +589,19 @@ footer {
         font-size: 1rem;
         width: 135px;
     }
+
+    .ul-rodape {
+        padding-left: 40px;
+    }
 }
 
-@media (max-width: 555px) {
+@media (max-width: 560px) {
     .ola {
         font-size: 2.8rem;
     }
 
     .nome-text {
-        font-size: 4.1rem;
+        font-size: 3.4rem;
     }
 
     .desenvolvedor {
@@ -568,7 +615,7 @@ footer {
     }
 
     .nome-text {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .desenvolvedor {
@@ -578,11 +625,11 @@ footer {
 
 @media (max-width: 485px) {
     .ola {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     .nome-text {
-        font-size: 3.1rem;
+        font-size: 2.5rem;
     }
 
     .desenvolvedor {
@@ -613,7 +660,7 @@ footer {
     }
 
     .titulo-sobre-mim, .titulo-projetos {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .email-contato {
@@ -621,30 +668,33 @@ footer {
     }
 
     .effect-sobre-mim {
-        width: 16.2rem;
+        width: 11rem;
         margin-top: 2px;
     }
 
     .effect-projetos {
-        width: 11rem;
+        width: 8rem;
+        margin-top: -8px;
     }
 
     .effect-habilidades {
-        width: 17rem;
+        width: 12rem;
+        margin-top: -7px;
     }
 
     .effect-contato {
-        width: 11.5rem;
+        width: 8rem;
+        margin-top: -7px
     }
 }
 
 @media (max-width: 388px) {
     .ola {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     .nome-text {
-        font-size: 2.6rem;
+        font-size: 2rem;
     }
 
     .desenvolvedor {
