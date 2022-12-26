@@ -16,7 +16,16 @@
 
 <!--Inicio cabeçalho-->
 <a name="inicio"></a>
-<header id="cabecalho-iniciar" class="js-linksInternos js-scroll">
+<header id="header" class="js-linksInternos js-scroll" style="border: 1px solid red;">
+
+    <button class="btn-icon-header" onclick="abrirBotao()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+    </button>
+
     <div id="title">
         <a href="index.html" id="link-name">
             <h1>Portfólio</h1>
@@ -24,30 +33,28 @@
         </a>
     </div>
 
-    <ul class="ul-header">
-        <a href="index.html" class="link-header">
-            <li>Início</li>
-        </a>
-        <a href="#sobre-mim" class="link-header">
-            <li>Sobre Mim</li>
-        </a>
-        <a href="#sessao-projetos" class="link-header">
-            <li>Projetos</li>
-        </a>
-        <a href="#sessao-habilidades" class="link-header">
-            <li>Habilidades</li>
-        </a>
-        <a href="#sessao-contato" id="projetos-btn" class="link-header">
-            <li>Contato</li>
-        </a>
-    </ul>
+    <div class="navegacao" id="navegacao" style="border: 1px solid red;">
+        <button class="btn-icon-header" onclick="abrirBotao()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x"
+                viewBox="0 0 16 16">
+                <path
+                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+        </button>
+        <a href="index.html" class="link-header">Início</a>
+        <a href="#sessao-sobre-mim" class="link-header">Sobre Mim</a>
+        <a href="#sessao-projetos" class="link-header">Projetos</a>
+        <a href="#sessao-habilidades" class="link-header">Habilidades</a>
+        <a href="#sessao-contato" id="projetos-btn" class="link-header">Contato</a>
+    </div>
 
 </header>
 <!--Fim cabeçalho-->
 
 <!--Inicio sessao inicial-->
 
-<section class="sessao-inicial js-scroll">
+<section class="sessao-inicial js-scroll" id="sessao-inicial" tabindex="0" onclick="closeSidebar()"
+    style="border: 1px solid red;">
 
     <div class="tamanho-textos">
         <p class="ola">Olá, eu sou</p>
@@ -71,9 +78,9 @@
 
 <!--Inicio sessao sobre mim-->
 
-<section class="sessao-sobre-mim js-scroll">
+<section class="js-scroll" id="sessao-sobre-mim" tabindex="0" onclick="closeSidebar()">
 
-    <div class="sobre-mim">
+    <div class=" sobre-mim">
 
         <div>
             <img src="components/images/img-notebook.png" alt="" class="img-sobre-mim" loading="lazy">
@@ -99,7 +106,7 @@
 <!--Fim sessao sobre mim-->
 
 <!--Inicio sessao projetos-->
-<section class="sessao-projetos js-scroll">
+<section class="js-scroll" id="sessao-projetos">
 
     <h1 class="titulo-projetos">Projetos <div class="effect-projetos"></div>
     </h1>
@@ -230,7 +237,7 @@
 <!--Fim sessao projetos-->
 
 <!--Inicio sessao habilidades-->
-<section class="sessao-habilidades js-scroll">
+<section class="js-scroll" id="sessao-habilidades">
     <h1 class="titulo-projetos">Habilidades <div class="effect-habilidades"></div>
     </h1>
 
@@ -359,7 +366,7 @@
 <!--Fim sessao habilidades-->
 
 <!--Inicio sessao Contato-->
-<section class="sessao-contato js-scroll">
+<section class="js-scroll" id="sessao-contato">
     <div class="centralizar">
         <h1 class="titulo-projetos">Contato <div class="effect-contato"></div>
         </h1>

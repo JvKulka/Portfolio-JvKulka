@@ -3,17 +3,14 @@ body {
     color: white;
     font-family: poppinsregular;
     max-width: 1200px;
-    margin: 15px auto;
+    margin: auto;
 }
 
 header {
     display: flex;
-    flex-direction: row;
-    /*com o 'row' o elemento fica em sentido de linha*/
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
-    padding: 30px;
+    padding: 10px 30px;
 }
 
 #title {
@@ -30,18 +27,20 @@ header {
     color: white;
 }
 
+.navegacao {
+    display: flex;
+    gap: 2.5em;
+}
+
 .link-header {
     color: white;
     text-decoration: none;
+    padding: 10px 0;
+    transition: 0.3s;
 }
 
 .link-header:hover {
     color: #5ae974;
-}
-
-li {
-    display: inline-block;
-    margin: 20px;
 }
 
 #projetos-btn {
@@ -56,6 +55,24 @@ li {
     transition: 0.5s;
 }
 
+.btn-icon-header {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+@keyframes showSidebar {
+    from {
+        margin-left: -100vw;
+    }
+
+    top {
+        margin-left: -10vw;
+    }
+}
+
 /*-------------------------------------------------------------------------- SESSAO INICIAL --------------------------------------------------------------------------------------*/
 
 .sessao-inicial {
@@ -63,17 +80,18 @@ li {
     justify-content: center;
     align-items: center;
     padding: 35px;
+    transition: 1s;
 }
 
 .ola {
-    font-size: 2.9rem;
+    font-size: 2.8rem;
     font-family: poppinslight;
     margin-bottom: -10px;
 }
 
 .nome-text {
     color: #60fb7c;
-    font-size: 3.9rem;
+    font-size: 3.8rem;
     font-family: poppinslight;
 }
 
@@ -83,7 +101,7 @@ li {
     animation-iteration-count: infinite;
     transform-origin: 70% 70%;
     display: inline-block;
-    margin-left: -15px;
+    margin-left: -10px;
 }
 
 @keyframes bye-animation {
@@ -173,9 +191,9 @@ li {
     border-radius: 2px;
 }
 
-.sessao-sobre-mim {
-    margin-top: 250px;
-    margin-bottom: 250px;
+#sessao-sobre-mim {
+    padding-top: 250px;
+    padding-bottom: 250px;
 }
 
 .sobre-mim {
@@ -209,8 +227,8 @@ li {
 }
 
 /*-------------------------------------------------------------------------------- SESSAO PROJETOS ------------------------------------------------------------------*/
-.sessao-projetos {
-    margin-bottom: 250px;
+#sessao-projetos {
+    padding-bottom: 250px;
 }
 
 .divisao-sessao {
@@ -332,8 +350,8 @@ li {
 
 /*------------------------------------------------------------------------------------------- HABILIDADE -----------------------------------------------------------------*/
 
-.sessao-habilidades {
-    margin-bottom: 250px;
+#sessao-habilidades {
+    padding-bottom: 250px;
 }
 
 .effect-habilidades {
@@ -421,7 +439,7 @@ li {
 
 
 /* ------------------------------------------------------------------------------CONTATO--------------------------------------------------------------------------------------- */
-.sessao-contato {
+#sessao-contato {
     margin-bottom: 250px;
     padding: 20px;
 }
@@ -584,6 +602,29 @@ footer {
     }
 }
 
+@media (max-width: 833px) {
+    .btn-icon-header {
+        display: block;
+    }
+
+    .navegacao {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: #000000;
+        width: 40vw;
+        height: 100%;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: 100vw;
+    }
+
+    .link-header {
+        margin-left: 10px;
+    }
+
+}
+
 @media (max-width: 650px) {
     .link-rodape {
         font-size: 1rem;
@@ -609,7 +650,7 @@ footer {
     }
 }
 
-@media (max-width: 495px) {
+@media (max-width: 498px) {
     .ola {
         font-size: 1.9rem;
     }
@@ -638,20 +679,20 @@ footer {
 }
 
 @media (max-width: 400px) {
-    .sessao-sobre-mim {
-        margin-top: 150px;
-        margin-bottom: 150px;
+    #sessao-sobre-mim {
+        padding-top: 150px;
+        padding-bottom: 150px;
     }
 
-    .sessao-projetos {
-        margin-bottom: 150px;
+    #sessao-projetos {
+        padding-bottom: 150px;
     }
 
-    .sessao-habilidades {
-        margin-bottom: 150px;
+    #sessao-habilidades {
+        padding-bottom: 150px;
     }
 
-    .sessao-contato {
+    #sessao-contato {
         margin-bottom: 150px;
     }
 
@@ -660,7 +701,7 @@ footer {
     }
 
     .titulo-sobre-mim, .titulo-projetos {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
 
     .email-contato {

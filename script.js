@@ -44,3 +44,35 @@ function navegacaoAnimacaoScroll() {
     }
 }
 navegacaoAnimacaoScroll()
+
+// Criação de animação do header responsivo
+
+let header = document.getElementById('header')
+let navegacao = document.getElementById('navegacao')
+let sessaoInicial = document.getElementById('sessao-inicial')
+let showSidebar = false
+
+function abrirBotao() {
+    showSidebar = !showSidebar
+    if (showSidebar) {
+        navegacao.style.marginLeft = '-10vw'
+        navegacao.style.animationName = 'showSidebar'
+        sessaoInicial.style.filter = 'blur(2px)'
+    } else {
+        navegacao.style.marginLeft = '-100vw'
+        navegacao.style.animationName = ''
+        sessaoInicial.style.filter = ''
+    }
+}
+
+function closeSidebar() {
+    if (showSidebar) {
+        abrirBotao()
+    }
+}
+
+window.addEventListener('resize', function (event) {
+    if (this.window.innerWidth > 768 && showSidebar) {
+        abrirBotao()
+    }
+})
