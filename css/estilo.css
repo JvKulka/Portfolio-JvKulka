@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(27, 27, 27);
+    background-color: #1b1b1b;
     color: white;
     font-family: poppinsregular;
     max-width: 1200px;
@@ -61,7 +61,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .ola {
@@ -92,6 +91,8 @@ li {
     border-radius: 35px;
     transition: 0.4s all;
     border: none;
+    text-decoration: none;
+    color: #1b1b1b;
 }
 
 .btn-linkedin:hover {
@@ -129,24 +130,24 @@ li {
 
 .sessao-sobre-mim {
     margin-top: 250px;
-    margin-bottom: 420px;
-    width: 1200px;
+    margin-bottom: 250px;
+}
+
+.sobre-mim {
+    display: flex;
 }
 
 .img-sobre-mim {
-    width: 358px;
-    float: left;
+    width: 340px;
     transition: 0.3s all;
+    padding: 25px 20px;
 }
 
 .img-sobre-mim:hover {
     transform: scale(1.02);
 }
 
-.sobre-mim {
-    display: flex;
-    flex-direction: column;
-    width: 700px;
+.textos-sobre-mim {
     padding: 20px;
 }
 
@@ -156,15 +157,14 @@ li {
     margin-top: auto;
 }
 
-.texto-sobre-mim {
+.inf-sobre-mim {
     font-size: 1.1rem;
-    text-align: justify;
+    text-align: start;
 }
 
 /*-------------------------------------------------------------------------------- SESSAO PROJETOS ------------------------------------------------------------------*/
-#sessao-projetos {
-    margin-top: 385px;
-    margin-bottom: 380px;
+.sessao-projetos {
+    margin-bottom: 250px;
 }
 
 .divisao-sessao {
@@ -286,9 +286,8 @@ li {
 
 /*------------------------------------------------------------------------------------------- HABILIDADE -----------------------------------------------------------------*/
 
-#sessao-habilidades {
-    margin-top: 385px;
-    margin-bottom: 320px;
+.sessao-habilidades {
+    margin-bottom: 250px;
 }
 
 .effect-habilidades {
@@ -376,9 +375,8 @@ li {
 
 
 /* ------------------------------------------------------------------------------CONTATO--------------------------------------------------------------------------------------- */
-#sessao-contato {
-    margin-top: 390px;
-    margin-bottom: 320px;
+.sessao-contato {
+    margin-bottom: 250px;
     padding: 20px;
 }
 
@@ -506,20 +504,6 @@ footer {
     }
 }
 
-@media (max-width: 1200px) {
-    .sobre-mim {
-        width: 600px;
-    }
-}
-
-@media (max-width: 1165px) {
-    .img-sobre-mim {
-        width: 320px;
-        margin-top: 115px;
-    }
-
-}
-
 @media (max-width: 1070px) {
     .img-sobre-mim {
         display: none;
@@ -542,6 +526,25 @@ footer {
 @media (max-width: 875px) {
     .img-foto {
         display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .sessao-sobre-mim {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+
+    .sessao-projetos {
+        margin-bottom: 150px;
+    }
+
+    .sessao-habilidades {
+        margin-bottom: 150px;
+    }
+
+    .sessao-contato {
+        margin-bottom: 150px;
     }
 }
 
