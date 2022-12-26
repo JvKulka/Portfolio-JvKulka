@@ -64,6 +64,7 @@ function toggleSidebar() {
     else {
         navigationHeader.style.marginLeft = '-100vw';
         navigationHeader.style.animationName = '';
+        navigationHeader.style.transition = '1s'
         sessaoInicial.style.filter = '';
         sessaoSobreMim.style.filter = '';
     }
