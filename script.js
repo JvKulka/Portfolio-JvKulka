@@ -54,7 +54,7 @@ let sessaoSobreMim = document.getElementById('sessao-sobre-mim');
 let linkHeader = document.querySelectorAll('.link-header')
 let showSidebar2 = false;
 
-function toggleSidebar() {
+function toggleSidebar(event) {
     showSidebar2 = !showSidebar2;
     if (showSidebar2) {
         navigationHeader.style.marginLeft = '-10vw';
@@ -68,6 +68,11 @@ function toggleSidebar() {
         navigationHeader.style.transition = '1s'
         sessaoInicial.style.filter = '';
         sessaoSobreMim.style.filter = '';
+    }
+
+    // Otimização click em dispositivos mobile
+    if (event.type === 'touchstart') {
+        event.preventDefault()
     }
 }
 

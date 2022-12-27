@@ -65,14 +65,13 @@
 
 .card__giratorio-conteudo--traseira {
     background: linear-gradient(229deg, #5ae974, #37dd69);
-    color: white;
+    color: rgb(0, 0, 0);
     transform: rotateY(180deg);
 }
 
 .card__giratorio-conteudo--traseira h1,
 .card__giratorio-conteudo--traseira p {
     margin: 0;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .card__giratorio-conteudo--traseira h1 {

@@ -117,10 +117,11 @@
 
     .desenvolvedor {
         font-size: 1.3rem;
+        margin-top: -10px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     #sessao-inicial {
         padding-top: 100px;
         padding-bottom: 110px;
