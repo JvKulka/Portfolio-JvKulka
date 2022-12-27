@@ -23,9 +23,9 @@
 </head>
 
 <!--Inicio cabeçalho-->
-<header id="header">
+<header id="header" class="js-linksInternos">
 
-    <button onclick="toggleSidebar()" class="btn_icon_header">
+    <button onclick=" toggleSidebar()" class="btn_icon_header">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
             viewBox="0 0 16 16">
             <path fill-rule="evenodd"
@@ -48,11 +48,11 @@
                     d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
             </svg>
         </button>
-        <a href="index.html" class="link-header">Início</a>
-        <a href="#sessao-sobre-mim" class="link-header">Sobre Mim</a>
-        <a href="#sessao-projetos" class="link-header">Projetos</a>
-        <a href="#sessao-habilidades" class="link-header">Habilidades</a>
-        <a href="#sessao-contato" class="link-header projetos-btn">Contato</a>
+        <a href="index.html" class="link-header" onclick="closeSidebar()">Início</a>
+        <a href="#sessao-sobre-mim" class="link-header" onclick="closeSidebar()">Sobre Mim</a>
+        <a href="#sessao-projetos" class="link-header" onclick="closeSidebar()">Projetos</a>
+        <a href="#sessao-habilidades" class="link-header" onclick="closeSidebar()">Habilidades</a>
+        <a href="#sessao-contato" class="link-header projetos-btn" onclick="closeSidebar()">Contato</a>
     </div>
 
 </header>
@@ -86,7 +86,7 @@
 
 <section class="js-scroll" id="sessao-sobre-mim" tabindex="0" onclick="closeSidebar()">
 
-    <div class=" sobre-mim">
+    <div class="sobre-mim">
 
         <div>
             <img src="components/images/img-notebook.png" alt="" class="img-sobre-mim" loading="lazy">

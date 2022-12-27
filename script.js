@@ -51,6 +51,7 @@ let header2 = document.getElementById('header');
 let navigationHeader = document.getElementById('navigation_header');
 let sessaoInicial = document.getElementById('sessao-inicial');
 let sessaoSobreMim = document.getElementById('sessao-sobre-mim');
+let linkHeader = document.querySelectorAll('.link-header')
 let showSidebar2 = false;
 
 function toggleSidebar() {
