@@ -27,7 +27,7 @@ function navegacaoAnimacaoScroll() {
 
     if (sections.length) {
 
-        const metadeWindow = window.innerHeight * 0.6
+        const metadeWindow = window.innerHeight * 0.7
 
         function animaScroll() {
             sections.forEach((section) => {

@@ -34,19 +34,19 @@
     flex-wrap: wrap;
 }
 
-.container .card-projeto {
+.card-projeto {
     position: relative;
     cursor: pointer;
     margin: 15px;
 }
 
-.container .card-projeto .face {
+.face {
     width: 300px;
     height: 200px;
     transition: 0.5s;
 }
 
-.container .card-projeto .face.face1 {
+.face1 {
     position: relative;
     background: #333;
     display: flex;
@@ -56,16 +56,16 @@
     transform: translateY(100px);
 }
 
-.container .card-projeto:hover .face.face1 {
+.card-projeto:hover .face1 {
     transform: translateY(0);
 }
 
-.container .card-projeto .face.face1 .descricao-projeto img {
+.descricao-projeto img {
     max-width: 100%;
     margin-bottom: 8px;
 }
 
-.container .card-projeto .face.face1 .descricao-projeto h3 {
+.descricao-projeto h3 {
     margin: 10px 0 0;
     padding: 0;
     color: #fff;
@@ -79,7 +79,7 @@
     text-decoration: none;
 }
 
-.container .card-projeto .face.face2 {
+.face2 {
     position: relative;
     background: #fff;
     display: flex;
@@ -91,18 +91,18 @@
     transform: translateY(-100px);
 }
 
-.container .card-projeto:hover .face.face2 {
+.card-projeto:hover .face2 {
     transform: translateY(0);
     cursor: default;
 }
 
-.container .card-projeto .face.face2 .descricao-projeto p {
+.descricao-projeto p {
     margin: 0;
     padding: 0;
     color: #000;
 }
 
-.container .card-projeto .face.face2 .descricao-projeto a {
+.face2 .descricao-projeto a {
     margin: 15px 0 0;
     display: inline-block;
     text-decoration: none;
@@ -112,7 +112,7 @@
     border: 1px solid #333;
 }
 
-.container .card-projeto .face.face2 .descricao-projeto a:hover {
+.face2 .descricao-projeto a:hover {
     background: #5ae974;
     color: rgb(0, 0, 0);
     transition: 0.4s;
