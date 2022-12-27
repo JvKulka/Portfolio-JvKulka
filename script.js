@@ -69,11 +69,6 @@ function toggleSidebar(event) {
         sessaoInicial.style.filter = '';
         sessaoSobreMim.style.filter = '';
     }
-
-    // Otimização click em dispositivos mobile
-    if (event.type === 'touchstart') {
-        event.preventDefault()
-    }
 }
 
 function closeSidebar() {

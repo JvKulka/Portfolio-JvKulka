@@ -56,6 +56,10 @@
         display: block;
     }
 
+    .btn_icon_header-x {
+        display: block;
+    }
+
     .title {
         font-size: 0.8rem
     }
@@ -106,7 +110,7 @@
     }
 }
 
-@media (max-width: 498px) {
+@media (max-width: 500px) {
     .ola {
         font-size: 1.9rem;
     }

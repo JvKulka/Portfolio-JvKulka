@@ -76,6 +76,15 @@ header {
     display: none;
 }
 
+.btn_icon_header-x {
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+    margin-top: 10px;
+    display: none;
+}
+
 /*----------------------------------------------------------------------------------- JAVASCRIPT -------------------------------------------------------------------------------------------*/
 
 /* Animação do scroll */
