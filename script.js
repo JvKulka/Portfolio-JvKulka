@@ -61,6 +61,7 @@ function toggleSidebar(event) {
         navigationHeader.style.animationName = 'showSidebar';
         sessaoInicial.style.filter = 'blur(2px)';
         sessaoSobreMim.style.filter = 'blur(2px)';
+        header2.classList.remove('animate__bounceInDown')
     }
     else {
         navigationHeader.style.marginLeft = '-100vw';
@@ -84,7 +85,4 @@ window.addEventListener('resize', function (event) {
         toggleSidebar();
     }
 
-    if (this.window.innerWidth < 833) {
-        header2.classList.remove('animate__bounceInDown')
-    }
 });
