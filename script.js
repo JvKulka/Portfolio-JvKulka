@@ -27,7 +27,7 @@ function navegacaoAnimacaoScroll() {
 
     if (sections.length) {
 
-        const metadeWindow = window.innerHeight * 0.7
+        const metadeWindow = window.innerHeight * 0.6
 
         function animaScroll() {
             sections.forEach((section) => {
@@ -82,5 +82,9 @@ window.addEventListener('resize', function (event) {
     if (window.innerWidth > 768 && showSidebar2) {
         showSidebar2 = true;
         toggleSidebar();
+    }
+
+    if (this.window.innerWidth < 833) {
+        header2.classList.remove('animate__bounceInDown')
     }
 });

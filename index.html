@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/ketframes.css">
     <link rel="stylesheet" href="css/mediaQueries.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Portfólio | JvKulka</title>
     <link rel="icon" href="components/images/fotoPefil.png">
     <script src="https://kit.fontawesome.com/37fcbc67a8.js" crossorigin="anonymous"></script>
@@ -24,7 +25,7 @@
 
 <!--Inicio cabeçalho-->
 <a id="inicio"></a>
-<header id="header" class="js-linksInternos">
+<header id="header" class="js-linksInternos animate__animated animate__bounceInDown">
 
     <button onclick=" toggleSidebar()" class="btn_icon_header">
         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list"
@@ -61,22 +62,24 @@
 
 <!--Inicio sessao inicial-->
 
-<section class="sessao-inicial js-scroll" id="sessao-inicial" tabindex="0" onclick="closeSidebar()">
+<section class="sessao-inicial" id="sessao-inicial" tabindex="0" onclick="closeSidebar()">
 
-    <div class="tamanho-textos">
+    <div class="tamanho-textos animate__animated animate__bounceInLeft">
         <p class="ola">Olá, eu sou</p>
-        <span class="nome-text">João V. Kulka
+        <h1 class="nome-text animate__animated animate__jackInTheBox">João V. Kulka
             <span class="bye">👋🏻</span>
-        </span>
+        </h1>
         <p class="desenvolvedor">Desenvolvedor Front-end</p>
 
         <div class="efeito-btn">
             <a href="https://www.linkedin.com/in/jvkulka/" target="_blank">
                 <button class="btn-linkedin">Linkedin</button></a>
+            <a href="components/images/Currículo João Victor Kulka.pdf" download><button class="btn-download">Download
+                    CV</button></a>
         </div>
     </div>
 
-    <div class="div-foto">
+    <div class="div-foto animate__animated animate__bounceInDown">
         <img src="components/images/programador.png" class="img-foto">
     </div>
 </section>

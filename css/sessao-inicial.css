@@ -17,6 +17,7 @@
     font-size: 3.8rem;
     font-family: poppinslight;
     font-weight: bold;
+    margin: 0;
 }
 
 .bye {
@@ -46,12 +47,36 @@
     border: none;
     text-decoration: none;
     color: #1b1b1b;
+    font-family: poppinslight;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.btn-download {
+    height: 60px;
+    font-size: 22px;
+    width: 90%;
+    letter-spacing: 1px;
+    background: #202020;
+    font-weight: bold;
+    border-radius: 35px;
+    transition: 0.4s all;
+    text-decoration: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: poppinslight;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.btn-download:hover {
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 .btn-linkedin:hover {
     cursor: pointer;
     transform: scale(1.03);
-
 }
 
 .tamanho-textos {
