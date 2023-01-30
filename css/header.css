@@ -71,7 +71,7 @@ header {
 .btn_icon_header {
     background: transparent;
     border: none;
-    color: var(--color-white);
+    color: white;
     cursor: pointer;
     display: none;
 }
@@ -79,7 +79,7 @@ header {
 .btn_icon_header-x {
     background: transparent;
     border: none;
-    color: var(--color-white);
+    color: white;
     cursor: pointer;
     margin-top: 10px;
     display: none;
